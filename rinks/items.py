@@ -9,3 +9,5 @@ class RinksItem(Item):
     link = Field()
     day = Field()
     time = Field()
+    cost = Field()
+    date = Field()

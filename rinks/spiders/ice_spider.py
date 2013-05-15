@@ -24,6 +24,8 @@ class IceSpider(BaseSpider):
 			item['link'] = "http://theice.info"
 			item['day'] = day
 			item['time'] = self.stripwhitespace(container.select("text()[2]").extract()[0])
+			item['cost'] = "N/A"
+			item['date'] = "N/A"
 			items.append(item)
 		return items
 
